@@ -80,7 +80,14 @@ public class Inventory : MonoBehaviour
         }
 
         InvUI.UpdateUI();
-        item.GetComponent<Item>().IsPickedUp = true;
+        if (item.CompareTag("Axe"))
+        {
+            item.GetComponentInChildren<Item>().IsPickedUp = true;
+        }
+        else
+        {
+            item.GetComponent<Item>().IsPickedUp = true;
+        }
 
         SetMessageText("", false);
     }

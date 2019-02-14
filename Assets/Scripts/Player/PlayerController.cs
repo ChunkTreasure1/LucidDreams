@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private InventoryUI InventoryUI;
     [SerializeField] private Inventory Inventory;
+    [SerializeField] private GameObject AxeAttack;
 
     private float Speed;
     private bool Crouched = false;
@@ -237,7 +238,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && MonsterInSight)
         {
+            Vector3 pos = transform.position;
+            pos.y += 1;
+            Quaternion rot = transform.rotation;
+            rot.y += 90;
 
+            GameObject aa = Instantiate(AxeAttack, pos, rot);
+            this.gameObject.SetActive(false);
         }
     }
 }
