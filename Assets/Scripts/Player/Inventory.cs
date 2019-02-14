@@ -28,6 +28,7 @@ public class Inventory : MonoBehaviour
     private float CurrTimerValue = 0;
 
     private bool TimerSet = false;
+    public bool HasAxe = false;
 
     public Crafting Crafting;
 
@@ -166,32 +167,15 @@ public class Inventory : MonoBehaviour
         {
             SelectItem(5);
         }
-
-        if (Input.GetAxisRaw("Mouse ScrollWheel") > 0)
-        {
-            CurrentlySelected += 1;
-            if (CurrentlySelected > Items.Count)
-            {
-                CurrentlySelected = 0;
-            }
-
-            SelectItem(CurrentlySelected);
-        }
-
-        if (Input.GetAxisRaw("Mouse ScrollWheel") < 0)
-        {
-            CurrentlySelected -= 1;
-            if (CurrentlySelected < 1)
-            {
-                CurrentlySelected = Items.Count;
-            }
-
-            SelectItem(CurrentlySelected);
-        }
     }
 
     private void Update()
     {
+        if ((FindAxe() != CurrentlySelected) && HasAxe)
+        {
+            SelectItem(FindAxe());
+        }
+
         if (ObjectInHand != null)
         {
             if (ObjectInHand.CompareTag("Spray"))
@@ -252,61 +236,64 @@ public class Inventory : MonoBehaviour
     //Selects an item in the inventory
     private void SelectItem(int itemToSelect)
     {
-        if (itemToSelect > Items.Count)
+        if (!HasAxe || (HasAxe && itemToSelect == FindAxe()))
         {
-            SetTimer();
-            return;
-        }
-
-        if (MaxInvSize > 1)
-        {
-            GameObject item = Items[itemToSelect - 1].gameObject;
-
-            item.transform.parent = Hand.transform;
-
-            //Reset transformation
-            item.transform.localPosition = Vector3.zero;
-            item.transform.rotation = Quaternion.identity;
-
-            if (!HandFilled)
+            if (itemToSelect > Items.Count)
             {
-                ObjectInHand = item;
-                HandFilled = true;
-            }
-            else
-            {
-                ObjectInHand.transform.parent = InventoryPlaceholder.transform;
-                ObjectInHand.GetComponent<MeshRenderer>().enabled = false;
-                //Set the UI slot to inactive
-                int index = Items.FindIndex(a => a.gameObject == ObjectInHand);
-                InvUI.GetVisibleSlots()[index].SetActive(false);
-
-                ObjectInHand = item;
-                item.GetComponent<MeshRenderer>().enabled = true;
+                SetTimer();
+                return;
             }
 
-            if (item.CompareTag("Spray"))
+            if (MaxInvSize > 1)
             {
-                LeftArm.SetBool("HasSpray", true);
-                LeftArm.SetBool("HasFlashlight", false);
-                LeftArm.Play("Pickup_Spray", 0);
-            }
-            else if (item.CompareTag("Flashligh"))
-            {
-                LeftArm.SetBool("HasSpray", false);
-                LeftArm.SetBool("HasFlashlight", true);
-                LeftArm.Play("Pickup_Flash", 0);
-            }
-            else
-            {
-                LeftArm.SetBool("HasSpray", false);
-                LeftArm.SetBool("HasFlashlight", false);
-            }
+                GameObject item = Items[itemToSelect - 1].gameObject;
 
-            CurrentlySelected = itemToSelect;
-            InvUI.GetVisibleSlots()[itemToSelect - 1].SetActive(true);
+                item.transform.parent = Hand.transform;
 
-            SetTimer();
+                //Reset transformation
+                item.transform.localPosition = Vector3.zero;
+                item.transform.rotation = Quaternion.identity;
+
+                if (!HandFilled)
+                {
+                    ObjectInHand = item;
+                    HandFilled = true;
+                }
+                else
+                {
+                    ObjectInHand.transform.parent = InventoryPlaceholder.transform;
+                    ObjectInHand.GetComponent<MeshRenderer>().enabled = false;
+                    //Set the UI slot to inactive
+                    int index = Items.FindIndex(a => a.gameObject == ObjectInHand);
+                    InvUI.GetVisibleSlots()[index].SetActive(false);
+
+                    ObjectInHand = item;
+                    item.GetComponent<MeshRenderer>().enabled = true;
+                }
+
+                if (item.CompareTag("Spray"))
+                {
+                    LeftArm.SetBool("HasSpray", true);
+                    LeftArm.SetBool("HasFlashlight", false);
+                    LeftArm.Play("Pickup_Spray", 0);
+                }
+                else if (item.CompareTag("Flashligh"))
+                {
+                    LeftArm.SetBool("HasSpray", false);
+                    LeftArm.SetBool("HasFlashlight", true);
+                    LeftArm.Play("Pickup_Flash", 0);
+                }
+                else
+                {
+                    LeftArm.SetBool("HasSpray", false);
+                    LeftArm.SetBool("HasFlashlight", false);
+                }
+
+                CurrentlySelected = itemToSelect;
+                InvUI.GetVisibleSlots()[itemToSelect - 1].SetActive(true);
+
+                SetTimer();
+            }
         }
     }
 
@@ -315,9 +302,14 @@ public class Inventory : MonoBehaviour
     {
         if (Items.Count < MaxInvSize)
         {
-            Items.Add(gameObject.GetComponent<Item>());
-
-            //Add UI
+            if (gameObject.CompareTag("Axe"))
+            {
+                Items.Add(gameObject.GetComponentInChildren<Item>());
+            }
+            else
+            {
+                Items.Add(gameObject.GetComponent<Item>());
+            }
         }
     }
 
@@ -366,6 +358,19 @@ public class Inventory : MonoBehaviour
     public GameObject GetObjectInHand()
     {
         return ObjectInHand;
+    }
+
+    private int FindAxe()
+    {
+        for (int i = 0; i < Items.Count; i++)
+        {
+            if (Items[i].CompareTag("Axe"))
+            {
+                return i;
+            }
+        }
+
+        return 0;
     }
 
 }

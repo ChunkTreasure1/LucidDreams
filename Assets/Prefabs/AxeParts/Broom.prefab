@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1432067496831092962}
   - component: {fileID: 3873295839704653319}
   - component: {fileID: 425541133685984302}
-  - component: {fileID: 8108560405815760427}
   - component: {fileID: 3749867082852608469}
+  - component: {fileID: 837766057904259963}
   m_Layer: 0
   m_Name: pCube2
   m_TagString: Broom
@@ -79,20 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8108560405815760427
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906290691949090956}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300002, guid: b39c6b17d1650ea4cb8d149fab926664, type: 3}
 --- !u!114 &3749867082852608469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,12 +92,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropSoundLevel: 50
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: ac2715b75bbc6a44bbbc07dce9c3c220, type: 3}
   Tooltip: Can be used to brush and craft
   IsEnabled: 0
   IsPickedUp: 0
   Name: Broom
   HaveBeenUsedForCrafting: 0
+--- !u!65 &837766057904259963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906290691949090956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.43340588, y: 1.447336, z: 0.3804572}
+  m_Center: {x: -0.16048855, y: -0.019605815, z: 0}
 --- !u!1 &5830824581238415412
 GameObject:
   m_ObjectHideFlags: 0

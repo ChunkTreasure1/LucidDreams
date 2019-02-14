@@ -21,9 +21,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SoundSender SoundSender;
     [SerializeField] private Animator LeftArm;
     [SerializeField] private Animator RightArm;
+    [SerializeField] private GameObject AxeArms;
     [SerializeField] private Camera Cam;
 
     [SerializeField] private InventoryUI InventoryUI;
+    [SerializeField] private Inventory Inventory;
 
     private float Speed;
     private bool Crouched = false;
@@ -61,11 +63,20 @@ public class PlayerController : MonoBehaviour
         {
             DeathItem = GameObject.Find("Death").GetComponent<PlayerDeath>();
         }
+
+        AxeArms.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Inventory.HasAxe)
+        {
+            AxeArms.SetActive(true);
+            RightArm.gameObject.SetActive(false);
+            LeftArm.gameObject.SetActive(false);
+        }
+
         if (Input.GetKey(KeyCode.Mouse0) && GiveBoost)
         {
             if (SpeedBoost != null)
@@ -123,11 +134,6 @@ public class PlayerController : MonoBehaviour
         Motor.RotateCamera(InventoryUI.GetInventoryOpen());
         Motor.Rotate(_rotation);
         Motor.Move(_velocity);
-        // If The player is under a certain y-pos the player dies
-        if(transform.position.y <= -50 && DeathItem != null)
-        {
-
-        }
     }
 
     private void CheckInputs()
@@ -181,25 +187,27 @@ public class PlayerController : MonoBehaviour
 
     private void SetSpeed()
     {
-        //Checks if the player is crouched, if it is set the speed to the set crouched speed
-        if (Crouched)
+        if (!Inventory.HasAxe)
         {
-            Speed = CrouchSpeedValue;
-            SoundSender.SendSound(CrouchSoundLevel, MovingMode.mM_Crouched);
-        }
-
-        //Check if the player is pressing the shift button and want's to run
-        if (IsRunning && !Crouched)
-        {
-            //Sets the speed to the set running speed
-            Speed = RunSpeedValue;
-            SoundSender.SendSound(RunSoundLevel, MovingMode.mM_Run);
-        }
-        else if (!IsRunning && !Crouched) 
-        {
-            //Otherwise set the speed to the walking speed
-            Speed = WalkSpeedValue;
-            SoundSender.SendSound(WalkSoundLevel, MovingMode.mM_Walk);
+            //Checks if the player is crouched, if it is set the speed to the set crouched speed
+            if (Crouched)
+            {
+                Speed = CrouchSpeedValue;
+                SoundSender.SendSound(CrouchSoundLevel, MovingMode.mM_Crouched);
+            }
+            //Check if the player is pressing the shift button and want's to run
+            else if (IsRunning && !Crouched)
+            {
+                //Sets the speed to the set running speed
+                Speed = RunSpeedValue;
+                SoundSender.SendSound(RunSoundLevel, MovingMode.mM_Walk);
+            }
+            else if (!IsRunning && !Crouched)
+            {
+                //Otherwise set the speed to the walking speed
+                Speed = WalkSpeedValue;
+                SoundSender.SendSound(WalkSoundLevel, MovingMode.mM_Walk);
+            }
         }
     }
 }

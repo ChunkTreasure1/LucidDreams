@@ -42,11 +42,14 @@ public class InventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If the player presses tab
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if ((Inventory.HasAxe && InventoryUIMain.activeSelf) || !Inventory.HasAxe)
         {
-            InventoryUIMain.SetActive(!InventoryUIMain.activeSelf);
-            InventoryOpen = InventoryUIMain.activeSelf;
+            //If the player presses tab
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                InventoryUIMain.SetActive(!InventoryUIMain.activeSelf);
+                InventoryOpen = InventoryUIMain.activeSelf;
+            }
         }
 
         if (StartFade)

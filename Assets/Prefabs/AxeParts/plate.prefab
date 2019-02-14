@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3361851890873877279}
   - component: {fileID: 2254109727747636282}
   - component: {fileID: 7429512496995674501}
+  - component: {fileID: 8135701771718575218}
   m_Layer: 0
   m_Name: plate
   m_TagString: Plate
@@ -94,7 +95,7 @@ MonoBehaviour:
   DropSoundLevel: 50
   Image: {fileID: 21300000, guid: f1160c5263cb26148ba719f732e1c263, type: 3}
   Tooltip: Can be used to craft broken plate
-  IsEnabled: 1
+  IsEnabled: 0
   IsPickedUp: 0
   Name: 
   HaveBeenUsedForCrafting: 0
@@ -114,3 +115,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8135701771718575218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9018722040628396723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6816037, y: 3.8372047, z: 2.681603}
+  m_Center: {x: -0.00000035762787, y: 0.91860235, z: 0.00000029802322}

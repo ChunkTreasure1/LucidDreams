@@ -242,7 +242,7 @@ public class CombineMenu : MonoBehaviour
                 PlayerInv.Drop(ItemTwoObj);
                 Destroy(ItemTwoObj);
 
-                GameObject bp = (GameObject)Instantiate(BrokenPlate);
+                GameObject bp = Instantiate(BrokenPlate);
                 PlayerInv.PickUp(bp);
             }
         }
@@ -322,7 +322,7 @@ public class CombineMenu : MonoBehaviour
 
             for (int i = 0; i < PlayerInv.GetItems().Count; i++)
             {
-                if (PlayerInv.GetItems()[i].CompareTag("BroomStick"))
+                if (PlayerInv.GetItems()[i].CompareTag("Stick"))
                 {
                     HasSecondItem = true;
                     ItemTwoObj = PlayerInv.GetItems()[i].gameObject;
@@ -339,6 +339,7 @@ public class CombineMenu : MonoBehaviour
 
                 GameObject sa = (GameObject)Instantiate(AxeObj);
                 PlayerInv.PickUp(sa);
+                PlayerInv.HasAxe = true;
             }
         }
 

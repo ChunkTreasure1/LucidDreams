@@ -16,6 +16,7 @@ public class AIController : MonoBehaviour
     [SerializeField] float m_KillingDistance = 2f;
 
     [SerializeField] GameObject m_DeathAnim;
+    [SerializeField] Inventory m_Player;
 
     Rigidbody m_Rigidbody;
     Animator m_Animator;
@@ -80,8 +81,6 @@ public class AIController : MonoBehaviour
         m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
 
         // calculate which leg is behind, so as to leave that leg trailing in the jump animation
-        // (This code is reliant on the specific run cycle offset in our animations,
-        // and assumes one leg passes the other at the normalized clip times of 0.0 and 0.5)
         float runCycle =
             Mathf.Repeat(
                 m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
@@ -144,7 +143,6 @@ public class AIController : MonoBehaviour
         Debug.DrawLine(transform.position + (Vector3.up * 0.1f), transform.position + (Vector3.up * 0.1f) + (Vector3.down * m_GroundCheckDistance));
 #endif
         // 0.1f is a small offset to start the ray from inside the character
-        // it is also good to note that the transform position in the sample assets is at the base of the character
         if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
         {
             m_GroundNormal = hitInfo.normal;
@@ -161,7 +159,10 @@ public class AIController : MonoBehaviour
 
     private void Update()
     {
-        CheckForPlayer();
+        if (!m_Player.HasAxe)
+        {
+            CheckForPlayer();
+        }
     }
 
     void CheckForPlayer()

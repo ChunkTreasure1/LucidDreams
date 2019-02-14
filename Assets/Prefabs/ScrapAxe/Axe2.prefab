@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9045647325269347875}
   m_Layer: 0
   m_Name: pPlane139
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8436399510343699965}
   m_Layer: 0
   m_Name: pPlane140
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 5799121377198661188}
   m_Layer: 0
   m_Name: pPlane138
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,9 +242,10 @@ GameObject:
   - component: {fileID: 2162619311013757917}
   - component: {fileID: 2535556359482741366}
   - component: {fileID: 3828512392622774318}
+  - component: {fileID: 7568185663406313277}
   m_Layer: 0
   m_Name: Axe_stick
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,6 +309,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7568185663406313277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559352842289721292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d613c41fd626a344ab967f67a0be0b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropSoundLevel: 50
+  Image: {fileID: 21300000, guid: 79604d7fc7a51a44b89255cc5d0c5a49, type: 3}
+  Tooltip: Kills the monster
+  IsEnabled: 1
+  IsPickedUp: 0
+  Name: 
+  HaveBeenUsedForCrafting: 0
 --- !u!1 &4592932954555233683
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +341,7 @@ GameObject:
   - component: {fileID: 5024469422520753782}
   m_Layer: 0
   m_Name: AxeHead1
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +416,7 @@ GameObject:
   - component: {fileID: 586924537776380253}
   m_Layer: 0
   m_Name: AxeTApe
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +449,7 @@ GameObject:
   - component: {fileID: 5978271604548109885}
   m_Layer: 0
   m_Name: Axe2
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

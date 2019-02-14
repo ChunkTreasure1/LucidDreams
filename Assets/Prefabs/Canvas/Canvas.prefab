@@ -5654,7 +5654,7 @@ MonoBehaviour:
   PlateBroken: {fileID: 21300000, guid: b2963e2ee09b29f44a73196767b649d4, type: 3}
   Broom: {fileID: 21300000, guid: ac2715b75bbc6a44bbbc07dce9c3c220, type: 3}
   BroomStick: {fileID: 21300000, guid: 0dd2eee99234fd4408108f354f878ff1, type: 3}
-  BrokenPlate: {fileID: 3192177054961461052, guid: 2033441c8a38562429b8ab6b66a89d69,
+  BrokenPlate: {fileID: 454021325118534499, guid: f3b10f9477e5455469462ed83f37f76b,
     type: 3}
   AxeHeadObj: {fileID: 6408585049214980615, guid: e28b06ed298782d40b56d6be090aff05,
     type: 3}
