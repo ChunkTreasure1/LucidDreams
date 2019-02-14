@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: b800b6f392ef5e04885a118de23df535
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: Parquet Mahogany
+    2100004: Parquet small
+    2100006: Plank
+    2800000: Parquet Mahogany - baseColor
+    2800002: Parquet Mahogany - normal
+    2800004: Parquet Mahogany - metallic
+    2800006: Parquet Mahogany - height
+    2800016: Parquet small - baseColor
+    2800018: Parquet small - normal
+    2800020: Parquet small - metallic
+    2800022: Parquet small - height
+    2800024: Plank - baseColor
+    2800026: Plank - normal
+    2800028: Plank - metallic
+    2800030: Plank - height
+    11400000: sbsar
+    11400002: graph0
+    11400004: graph1
+    11400006: graph2
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Parquet Mahogany
+    prototypeName: Parquet Mahogany
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://parquet_wood_mahogany\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"178951910\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"color\" uid=\"2075745353\" type=\"2\" value=\"0.650943,0.430025,0.199582\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Parquet Mahogany - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: b800b6f392ef5e04885a118de23df535, type: 3}
+    generatedTextures: []
+  - graphLabel: Parquet small
+    prototypeName: Parquet Mahogany
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://parquet_wood_mahogany\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"178951910\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Parquet Mahogany_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet small - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100004, guid: b800b6f392ef5e04885a118de23df535, type: 3}
+    generatedTextures: []
+  - graphLabel: Plank
+    prototypeName: Parquet Mahogany
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://parquet_wood_mahogany\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"178951910\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Parquet Mahogany_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Mahogany_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Plank - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100006, guid: b800b6f392ef5e04885a118de23df535, type: 3}
+    generatedTextures: []

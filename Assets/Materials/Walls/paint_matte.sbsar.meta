@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: c87b13591b4fe1346ad0de77284fee54
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: 'Matte Paint '
+    2100004: Lists
+    2800000: Matte Paint  - baseColor
+    2800002: Matte Paint  - normal
+    2800004: Matte Paint  - metallic
+    2800006: Matte Paint  - height
+    2800016: Lists - baseColor
+    2800018: Lists - normal
+    2800020: Lists - metallic
+    2800022: Lists - height
+    11400000: sbsar
+    11400002: graph0
+    11400004: graph1
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: 'Matte Paint '
+    prototypeName: 'Matte Paint '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://paint_matte\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2104562248\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"color\" uid=\"217690555\" type=\"2\" value=\"0.95283,0.95283,0.95283\"
+      />\n  <presetinput identifier=\"paint_roughness\" uid=\"205144942\" type=\"0\"
+      value=\"0.96\" />\n  <presetinput identifier=\"grain_intensity\" uid=\"205151173\"
+      type=\"0\" value=\"0.41\" />\n  <presetinput identifier=\"diffuse\" uid=\"263850710\"
+      type=\"4\" value=\"1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Matte Paint  - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint  - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+    generatedTextures: []
+  - graphLabel: Lists
+    prototypeName: 'Matte Paint '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://paint_matte\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2104562248\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"color\" uid=\"217690555\" type=\"2\" value=\"0.830189,0.830189,0.830189\"
+      />\n  <presetinput identifier=\"paint_roughness\" uid=\"205144942\" type=\"0\"
+      value=\"0.96\" />\n  <presetinput identifier=\"grain_intensity\" uid=\"205151173\"
+      type=\"0\" value=\"0.41\" />\n  <presetinput identifier=\"diffuse\" uid=\"263850710\"
+      type=\"4\" value=\"1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Matte Paint _1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Matte Paint _1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lists - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100004, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+    generatedTextures:
+    - {fileID: 2800016, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+    - {fileID: 2800022, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+    - {fileID: 2800020, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+    - {fileID: 2800018, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}

@@ -1,0 +1,614 @@
+fileFormatVersion: 2
+guid: 61c804aeae5af6d478bfd7ad3981719d
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: Douglas Fir Worn
+    2100002: Douglas Fir Worn_1
+    2100004: Douglas Fir Worn_Medium
+    2100006: Douglas Fir Worn_Mini
+    2100008: Douglas Fir Worn_2
+    2800000: Douglas Fir Worn - baseColor
+    2800002: Douglas Fir Worn - normal
+    2800004: Douglas Fir Worn - metallic
+    2800006: Douglas Fir Worn - ambientOcclusion
+    2800008: Douglas Fir Worn - height
+    2800010: Douglas Fir Worn_1 - baseColor
+    2800012: Douglas Fir Worn_1 - normal
+    2800014: Douglas Fir Worn_1 - metallic
+    2800016: Douglas Fir Worn_1 - ambientOcclusion
+    2800018: Douglas Fir Worn_1 - height
+    2800020: Douglas Fir Worn_Medium - baseColor
+    2800022: Douglas Fir Worn_Medium - normal
+    2800024: Douglas Fir Worn_Medium - metallic
+    2800026: Douglas Fir Worn_Medium - ambientOcclusion
+    2800028: Douglas Fir Worn_Medium - height
+    2800030: Douglas Fir Worn_Mini - baseColor
+    2800032: Douglas Fir Worn_Mini - normal
+    2800034: Douglas Fir Worn_Mini - metallic
+    2800036: Douglas Fir Worn_Mini - ambientOcclusion
+    2800038: Douglas Fir Worn_Mini - height
+    2800040: Douglas Fir Worn_2 - baseColor
+    2800042: Douglas Fir Worn_2 - normal
+    2800044: Douglas Fir Worn_2 - metallic
+    2800046: Douglas Fir Worn_2 - ambientOcclusion
+    2800048: Douglas Fir Worn_2 - height
+    11400000: sbsar
+    11400002: graph0
+    11400004: graph1
+    11400006: graph2
+    11400008: graph3
+    11400010: graph4
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Douglas Fir Worn
+    prototypeName: Douglas Fir Worn
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_douglas_fir_worn\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2784003627\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Douglas Fir Worn - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    generatedTextures:
+    - {fileID: 2800006, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800000, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800008, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800004, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800002, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+  - graphLabel: Douglas Fir Worn_Medium
+    prototypeName: Douglas Fir Worn
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_douglas_fir_worn\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2784003627\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Douglas Fir Worn_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Medium - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100004, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    generatedTextures:
+    - {fileID: 2800020, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800022, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800024, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800026, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800028, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+  - graphLabel: Douglas Fir Worn_Mini
+    prototypeName: Douglas Fir Worn
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_douglas_fir_worn\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2784003627\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Douglas Fir Worn_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_Mini - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100006, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    generatedTextures:
+    - {fileID: 2800030, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800032, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800034, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800036, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800038, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+  - graphLabel: Douglas Fir Worn_1
+    prototypeName: Douglas Fir Worn
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_douglas_fir_worn\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2784003627\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Douglas Fir Worn_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    generatedTextures:
+    - {fileID: 2800010, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800012, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800014, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800016, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    - {fileID: 2800018, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+  - graphLabel: Douglas Fir Worn_2
+    prototypeName: Douglas Fir Worn
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_douglas_fir_worn\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2784003627\" type=\"8\" value=\"11,11\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Douglas Fir Worn_2 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Douglas Fir Worn_2 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100008, guid: 61c804aeae5af6d478bfd7ad3981719d, type: 3}
+    generatedTextures: []
