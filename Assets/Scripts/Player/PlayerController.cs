@@ -45,8 +45,9 @@ public class PlayerController : MonoBehaviour
 
     public bool CanMove = true;
     private PlayerDeath DeathItem;
-
     private CapsuleCollider Collider;
+
+    private bool MonsterInSight = false;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +76,8 @@ public class PlayerController : MonoBehaviour
             AxeArms.SetActive(true);
             RightArm.gameObject.SetActive(false);
             LeftArm.gameObject.SetActive(false);
+
+            CheckForEnemy();
         }
 
         if (Input.GetKey(KeyCode.Mouse0) && GiveBoost)
@@ -208,6 +211,33 @@ public class PlayerController : MonoBehaviour
                 Speed = WalkSpeedValue;
                 SoundSender.SendSound(WalkSoundLevel, MovingMode.mM_Walk);
             }
+        }
+        else
+        {
+            Speed = 3f;
+        }
+    }
+
+    private void CheckForEnemy()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(this.transform.position, 2);
+        for (int i = 0; i < hitColliders.Length; i++)
+        {
+            if (hitColliders[i].CompareTag("Monster"))
+            {
+                Inventory.SetMessageText("Left click to kill monster", true);
+                MonsterInSight = true;
+                break;
+            }
+            else
+            {
+                MonsterInSight = false;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && MonsterInSight)
+        {
+
         }
     }
 }

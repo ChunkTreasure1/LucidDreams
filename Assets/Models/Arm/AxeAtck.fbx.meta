@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: f4a10180dde5615498e4c8a2d56489d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ar
+    100002: ar
+    100004: Arm1
+    100006: Arm__1_1:Arm1
+    100008: Arm__1_1:Elbow
+    100010: Arm__1_1:Index00
+    100012: Arm__1_1:Index01
+    100014: Arm__1_1:Index02
+    100016: Arm__1_1:Middle00
+    100018: Arm__1_1:Middle01
+    100020: Arm__1_1:Middle02
+    100022: Arm__1_1:Pinky00
+    100024: Arm__1_1:Pinky01
+    100026: Arm__1_1:Pinky02
+    100028: Arm__1_1:pPlane6
+    100030: Arm__1_1:Ring00
+    100032: Arm__1_1:Ring01
+    100034: Arm__1_1:Ring02
+    100036: Arm__1_1:Thumb00
+    100038: Arm__1_1:Thumb01
+    100040: Arm__1_1:Thumb02
+    100042: Arm__1_1:UpperArm
+    100044: Arm__1_1:Wrist
+    100046: ARM_H
+    100048: ARM_L
+    100050: AXE
+    100052: Axe_stick
+    100054: //RootNode
+    100056: AxeHead1
+    100058: AxeTApe
+    100060: Elbow
+    100062: group1
+    100064: Index00
+    100066: Index01
+    100068: Index02
+    100070: Middle00
+    100072: Middle01
+    100074: Middle02
+    100076: Pinky00
+    100078: Pinky01
+    100080: Pinky02
+    100082: pPlane138
+    100084: pPlane139
+    100086: pPlane140
+    100088: pPlane6
+    100090: Ring00
+    100092: Ring01
+    100094: Ring02
+    100096: Thumb00
+    100098: Thumb01
+    100100: Thumb02
+    100102: UpperArm
+    100104: Wrist
+    400000: Ar
+    400002: ar
+    400004: Arm1
+    400006: Arm__1_1:Arm1
+    400008: Arm__1_1:Elbow
+    400010: Arm__1_1:Index00
+    400012: Arm__1_1:Index01
+    400014: Arm__1_1:Index02
+    400016: Arm__1_1:Middle00
+    400018: Arm__1_1:Middle01
+    400020: Arm__1_1:Middle02
+    400022: Arm__1_1:Pinky00
+    400024: Arm__1_1:Pinky01
+    400026: Arm__1_1:Pinky02
+    400028: Arm__1_1:pPlane6
+    400030: Arm__1_1:Ring00
+    400032: Arm__1_1:Ring01
+    400034: Arm__1_1:Ring02
+    400036: Arm__1_1:Thumb00
+    400038: Arm__1_1:Thumb01
+    400040: Arm__1_1:Thumb02
+    400042: Arm__1_1:UpperArm
+    400044: Arm__1_1:Wrist
+    400046: ARM_H
+    400048: ARM_L
+    400050: AXE
+    400052: Axe_stick
+    400054: //RootNode
+    400056: AxeHead1
+    400058: AxeTApe
+    400060: Elbow
+    400062: group1
+    400064: Index00
+    400066: Index01
+    400068: Index02
+    400070: Middle00
+    400072: Middle01
+    400074: Middle02
+    400076: Pinky00
+    400078: Pinky01
+    400080: Pinky02
+    400082: pPlane138
+    400084: pPlane139
+    400086: pPlane140
+    400088: pPlane6
+    400090: Ring00
+    400092: Ring01
+    400094: Ring02
+    400096: Thumb00
+    400098: Thumb01
+    400100: Thumb02
+    400102: UpperArm
+    400104: Wrist
+    2100000: Arm__1_1_Nails
+    2100002: Arm__1_1_Arm
+    2100004: Arm__1__Nails
+    2100006: Arm__1__Arm
+    2100008: Tape
+    2100010: Stick
+    2100012: AxeHEad
+    2300000: Axe_stick
+    2300002: AxeHead1
+    2300004: pPlane138
+    2300006: pPlane139
+    2300008: pPlane140
+    3300000: Axe_stick
+    3300002: AxeHead1
+    3300004: pPlane138
+    3300006: pPlane139
+    3300008: pPlane140
+    4300000: Arm__1_1:pPlane6
+    4300002: Arm__1_1:Arm1
+    4300004: pPlane6
+    4300006: Arm1
+    4300008: pPlane140
+    4300010: Axe_stick
+    4300012: AxeHead1
+    4300014: pPlane138
+    4300016: pPlane139
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Arm1
+    13700002: Arm__1_1:Arm1
+    13700004: Arm__1_1:pPlane6
+    13700006: pPlane6
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 375
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

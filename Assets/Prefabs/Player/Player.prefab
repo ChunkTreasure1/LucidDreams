@@ -185,8 +185,10 @@ MonoBehaviour:
   SoundSender: {fileID: 7475996170531956027}
   LeftArm: {fileID: 5073486017870027053}
   RightArm: {fileID: 2412622592450558855}
+  AxeArms: {fileID: 0}
   Cam: {fileID: 7475996170547266922}
   InventoryUI: {fileID: 0}
+  Inventory: {fileID: 7475996170531956028}
   BoostTimer: 0
   StartBoostTimer: 0
   CanMove: 1
